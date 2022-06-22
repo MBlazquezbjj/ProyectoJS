@@ -1,31 +1,59 @@
 body {
-    background: linear-gradient(to right, purple, lightsalmon);
+    background-image: url(/Img/direccion-correo-electronico-numero-telefono-iconos-letras-imprimen-pantalla-bloque-madera-circular-sobre-fondo-verde-contacto-comercial-pagina-web-concepto-servicio-al-cliente-representacion-3d_50039-300.webp);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
 }
-
-
 
 form {
-
-    margin: 20px;
-    font-size: 19px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-
+    width: 450px;
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
 }
 
-#autos {
-    width: 150px;
-    height: 75px;
-    margin: 15px;
-}
-
-#btn {
-    margin: 15px;
+a:hover {
+    color: black;
 }
 
 h2 {
+    color: black;
     text-align: center;
+    margin: 0%;
     font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
+    background-color: darkcyan;
+    color: white;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    form {
+        width: 100%;
+    }
 }

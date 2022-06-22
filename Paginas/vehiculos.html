@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divisas</title>
-    <link rel="stylesheet" href="./Styles/styles.css">
-    <script src="./Javascript/index.js"></script
+    <title>Vehiculos</title>
+    <link rel="stylesheet" href="/Styles/vehiculos.css">
+    <script src="/Javascript/vehiculos.js"></script>
+
 </head>
 
-<body class="fondo">
+<body>
     <h1>
         <ul>
 
@@ -27,18 +28,21 @@
                 <a href="/Paginas/contacto.html">Contacto</a>
             </li>
         </ul>
-
     </h1>
-    <h3>Divisas</h3>
-    <form class="formulario">
-        <p>Moneda a cambiar:</p>
-        <input type="radio" name="cambio" id="uno">Dolar
-        <input type="radio" name="cambio" id="dos">Euro
-        <p>Ingrese monto:</p>
-        <input type="number" id="valor" min="1" max="100000">
-        <input type="button" id="cotizador" value="cotizar" onclick="convertir()">
-    </form>
 </body>
+<h2>Lista</h2>
+<form name="selector">
+    <label for="autos">Selecciona los vehiculos</label>
+    <br>
+    <select name="autos" id="autos" multiple="multiple">
+        <option>Bmw</option>
+        <option>Audi</option>
+        <option>Nissan</option>
+        <option>Honda</option>
+        <option>Toyota</option>
+    </select> <br>
+    <input type="button" id="btn" value="contar" onclick="contar()">
+</form>
 
 
 </html>

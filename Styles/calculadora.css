@@ -1,3 +1,15 @@
+body {
+    background-image: url(/Img/Numeros3.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+
+}
+
+a:hover {
+    color: black;
+}
+
 .calculadora {
     display: block;
     margin: 0 auto;
@@ -26,7 +38,10 @@
     background-color: white;
     border-radius: 25px;
     overflow-y: scroll;
+}
 
-}body {
-    background-color: darkkhaki;
+@media (max-width:480px) {
+    form {
+        width: 100%;
+    }
 }
