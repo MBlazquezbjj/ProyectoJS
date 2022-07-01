@@ -48,9 +48,9 @@ textarea {
     background: lightblue;
     background-size: cover;
     background-position: center;
-    }
+}
 
-.suscripcion h3{
+.suscripcion h3 {
     color: whitesmoke;
     font-size: 3rem;
     text-transform: uppercase;
@@ -67,9 +67,8 @@ textarea {
 .suscripcion form {
     display: flex;
     max-width: 70rem;
-    border: .2rem solid whitesmoke;
     padding: 1rem;
-    border-radius: 5rem;
+
     margin: 2rem auto;
     height: 5.5rem;
 }
@@ -84,22 +83,24 @@ textarea {
     background: none;
 }
 
-.suscripcion form input [type="email"]::placeholder{
-    color:whitesmoke;
+.suscripcion form input [type="email"]::placeholder {
+    color: whitesmoke;
     text-transform: capitalize;
-    
+
 }
 
-.suscripcion form input [type="submit"]{
+.suscripcion form input [type="submit"] {
     background: white;
     width: 20rem;
     font-size: 1.7rem;
     border-radius: 5rem;
     cursor: pointer;
 }
-.suscripcion form input [type="submit"]:hover{
+
+.suscripcion form input [type="submit"]:hover {
     color: lightgoldenrodyellow;
 }
+
 #boton {
     background-color: darkcyan;
     color: white;
@@ -121,6 +122,6 @@ textarea {
     }
 }
 
-.suscripcion p{
+.suscripcion p {
     width: auto;
 }
