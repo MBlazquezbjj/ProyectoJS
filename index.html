@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,28 +11,31 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
-<body class="fondo">
+<body>
+    <header>
+        <div class="interior">
+            <nav class="navegacion">
+                <ul>
 
-    <h1>
-        <ul>
+                    <li>
+                        <a href="../index.html">Divisas</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas/calculadora.html">Calculadora</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas/vehiculos.html">Vehiculos</a>
+                    </li>
+                    <li>
+                        <a href="/Paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <li>
-                <a href="../index.html">Divisas</a>
-            </li>
-            <li>
-                <a href="/Paginas/calculadora.html">Calculadora</a>
-            </li>
-            <li>
-                <a href="/Paginas/vehiculos.html">Vehiculos</a>
-            </li>
-            <li>
-                <a href="/Paginas/contacto.html">Contacto</a>
-            </li>
-        </ul>
 
-    </h1>
-
-    <h3>Divisas</h3>
+    <h1>DIVISAS</h1>
     <form class="formulario">
         <p>Moneda a cambiar:</p>
         <input type="radio" name="cambio" id="uno">Dolar
@@ -41,5 +44,7 @@
         <input type="number" id="valor" min="1" max="100000">
         <input type="button" id="cotizador" value="cotizar" onclick="convertir()">
     </form>
+    
+</body>
 
 </html>
