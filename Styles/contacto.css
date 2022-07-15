@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-image: url(/Img/direccion-correo-electronico-numero-telefono-iconos-letras-imprimen-pantalla-bloque-madera-circular-sobre-fondo-verde-contacto-comercial-pagina-web-concepto-servicio-al-cliente-representacion-3d_50039-300.webp);
     background-size: 100vw 100vh;
     background-attachment: fixed;
     margin: 0;
 }
+
 header {
     width: 100%;
     height: 90px;
@@ -20,30 +22,33 @@ header {
     padding: 0 10px;
     margin: auto;
 }
-.navegacion{
-    float:right;
+
+.navegacion {
+    float: right;
     display: flex;
     align-items: center;
     min-height: 90px;
     z-index: 1000;
 }
-.navegacion ul{
+
+.navegacion ul {
     list-style: none;
     padding: 0 10px;
 
 }
 
-.navegacion ul li{
+.navegacion ul li {
     display: inline-block;
     position: relative;
     transition: .3s linear;
     z-index: 1000;
 }
 
-.navegacion ul li:hover{
+.navegacion ul li:hover {
     transform: scale(1.1);
 }
-.navegacion ul li a{
+
+.navegacion ul li a {
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -52,130 +57,88 @@ header {
     padding: 12px 20px;
     transition: .3s linear;
 }
-.navegacion ul li a:hover{
+
+.navegacion ul li a:hover {
     color: #00c9bd;
     transform: scale(1.1);
 }
 
-
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #00c9bd;
+}
 
 form {
-    width: 450px;
-    margin: auto;
-    padding: auto;
+    max-width: 550px;
+    width: 90%;
+    background: transparent;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
     box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 7px;
 }
 
-a:hover {
-    color: black;
-}
-
-h2 {
-    color: black;
+h1 {
+    margin: 0;
     text-align: center;
-    margin: 0%;
-    font-size: 30px;
-    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+    font-weight: bold;
+
 }
 
 input,
 textarea {
     width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
+    padding: 10px;
     box-sizing: border-box;
-    font-size: 17px;
+    outline: none;
+    resize: none;
     border: none;
+    border-bottom: 1px solid #d3d3d3;
 }
 
-textarea {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
+input[type="text"]:focus,
+textarea:focus {
+    border-bottom: 1px solid darkcyan;
 }
 
-.suscripcion {
-    text-align: center;
-    padding: 5rem 1rem;
-    background: lightblue;
-    background-size: cover;
-    background-position: center;
-}
-
-.suscripcion h3 {
-    color: whitesmoke;
-    font-size: 3rem;
-    text-transform: uppercase;
-}
-
-.suscripcion p {
-    color: whitesmoke;
-    font-size: 1.6rem;
-    margin: 2rem auto;
-    width: 70rem;
+textarea::-webkit-scrollbar {
+    width: 4px;
 
 }
 
-.suscripcion form {
-    display: flex;
-    max-width: 70rem;
-    padding: 1rem;
-
-    margin: 2rem auto;
-    height: 5.5rem;
-}
-
-.suscripcion form input [type="email"] {
-    padding: 0 2rem;
-    font-size: 1.7rem;
-    background: none;
-    width: 100%;
-    color: white;
-    text-transform: none;
-    background: none;
-}
-
-.suscripcion form input [type="email"]::placeholder {
-    color: whitesmoke;
-    text-transform: capitalize;
-
-}
-
-.suscripcion form input [type="submit"] {
-    background: white;
-    width: 20rem;
-    font-size: 1.7rem;
-    border-radius: 5rem;
-    cursor: pointer;
-}
-
-.suscripcion form input [type="submit"]:hover {
-    color: lightgoldenrodyellow;
-}
-
-#boton {
+textarea::-webkit-scrollbar-thumb {
     background-color: darkcyan;
+}
+
+.center {
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, #0b132b, darkcyan);
     color: white;
-    padding: 20px;
-}
-
-#boton:hover {
+    font-size: 17px;
     cursor: pointer;
+    border-radius: 3px;
 }
 
-.suscripcion label {
-    color: whitesmoke;
-    font-size: 1.8rem;
+.error {
+    color: red;
+    font-weight: bold;
+
+
 }
 
-@media (max-width:480px) {
-    form {
-        width: 100%;
-    }
-}
-
-.suscripcion p {
-    width: auto;
+.error-border {
+    border-bottom: 1px solid red;
 }

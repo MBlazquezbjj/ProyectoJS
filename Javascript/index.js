@@ -1,8 +1,8 @@
 function convertir() {
     var valore = parseInt(document.getElementById("valor").value);
     var resultado = 0;
-    var dolar = 252;
-    var euro = 270;
+    var dolar = 285;
+    var euro = 290;
     if (document.getElementById("uno").checked) {
         resultado = valore / dolar;
         swal("El cambio de pesos a", "Dolares es:$" + resultado.toFixed(2),"success" );

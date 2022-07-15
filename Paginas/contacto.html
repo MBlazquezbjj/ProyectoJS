@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="/Styles/contacto.css">
-    <script src="/Javascript/contacto.js"></script>
+
 </head>
 
 <body>
@@ -33,29 +33,31 @@
             </nav>
         </div>
     </header>
+    <div class="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1>Contactanos</h1>
 
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Tu nombre">
+            <small class="error"></small>
 
-    <form action="" id="form-contacto">
-        <h2>CONTACTO</h2>
-        <input type="text" name="Nombre" placeholder="Nombre">
-        <input type="text" name="Correo" placeholder="Correo">
-        <input type="text" name="Telefono" placeholder="Telefono">
-        <textarea name="mensaje" placeholder="Escriba aqui su consulta"></textarea>
-        <input type="button" value="ENVIAR" id="boton">
-    </form>
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Tu email">
+            <small class="error"></small>
 
-    <div class="suscripcion">
-        <h3>SUSCRIBETE PARA MAS INFORMACION</h3>
-        <P> INFORMACION</P>
-        <form action="" id="form">
-            <input type="email" id="email-form" placeholder="ingresa tu email">
-            <input type="submit" value="suscribete">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" placeholder="Tu mensaje" rows="6"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="Enviar mensaje">
+
+            </div>
+
         </form>
-        <label>
-            <input type="checkbox" id="activador">
-            Terminos y condiciones
-        </label>
     </div>
+
+    <script src="/Javascript/contacto.js"></script>
 </body>
 
 </html>
