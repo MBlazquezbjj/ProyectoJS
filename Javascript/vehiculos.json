@@ -1,0 +1,27 @@
+[
+    {
+        "modelo": "peugeot 208",
+        "produccion": 2021,
+        "kilometros": 8000
+    },
+    {
+        "modelo": "ford ka",
+        "produccion": 2022,
+        "kilometros": 1000
+    },
+    {
+        "modelo": "chevrolet cruze",
+        "produccion": 2020,
+        "kilometros": 18000
+    },
+    {
+        "modelo": "volkswagen golf",
+        "produccion": 2022,
+        "kilometros": 0
+    },
+    {
+        "modelo": "renault alaskan",
+        "produccion": 2022,
+        "kilometros": 3000
+    }
+]
